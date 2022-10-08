@@ -1,0 +1,289 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* CSS Document */
+html{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+section{
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.zawartosc1200{
+	max-width: 1200px;
+	margin: auto;
+}
+nav{
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	z-index: 2;
+}
+nav ol{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3em;
+	background-color: black;
+	border-radius: 20px;
+	padding: 0 2em;
+}
+nav ol li a{
+	color: white;
+	padding: 1em;
+	text-decoration: none;
+}
+nav ol li a:hover{
+	color: yellow;
+}
+/*nawigacja smartfonu*/
+.burger{
+	background-color: black;
+	font-size: 4em;
+	color: white;
+	margin: 0.5em 0.4em 0.1em;
+	padding: 5px 10px;
+	position: fixed;
+	border-radius: 2px;
+	right: 0.1em;
+	cursor: pointer;
+	display: none;
+}
+.nakladka{
+	height: 100vh;
+	width: 0%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	overflow: hidden;
+	transition: 1s;
+	z-index: 1;
+	display: none;
+}
+.nakladka ul{
+	height: 100vh;
+	background-color: black;
+	position: relative;
+	text-align: center;
+	padding-top: 200px;
+}
+.nakladka ul a{
+	line-height: 3em;
+	text-decoration: none;
+	display: block;
+	color: white;
+}
+.nakladka ul a:hover{
+	background-color: yellow;
+	color: black;
+}
+.closebutton{
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	font-size: 4em;
+
+	padding: 0.2em 0.4em;
+	text-decoration: none;
+	color: white;
+	z-index: 10;
+	display: none;
+}
+
+
+#logo{
+	padding: 0.5em;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
+}
+#logo span{
+	color: yellow;
+}
+
+
+#pierwsza{
+	background-image:url("../img/tlo pierwsze.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#pierwsza h1{
+	position: absolute;
+	left: 0;
+	bottom: 100px;
+	background-color: black;
+	width: 40vw;
+	padding: 1em;
+	border-radius: 0em 1em 1em 0em;
+	font-size: 2em;
+	color: white;
+}
+
+#druga{
+	background-color: black;
+	position: relative;
+}
+#druga article{
+	display: flex;
+}
+#druga h1{
+	position: absolute;
+	right: 0;
+	top: 100px;
+	background-color: white;
+	width: 40vw;
+	padding: 1em;
+	border-radius: 1em 0 0 1em;
+	font-size: 2em;
+}
+#druga article p{
+	padding-left: 7vw;
+	line-height: 1.4em;
+	color: white;
+}
+#druga article img{
+	width: 50%;
+}
+#trzecia{
+	background-image: url("../img/tlo2.jpg");
+	background-size: cover;
+	background-position: center;
+}
+#czwarta{
+	background-color: white;
+	position: relative;
+	padding-top: 250px;
+}
+#czwarta h1{
+	position: absolute;
+	left: 0;
+	top: 100px;
+	background-color: black;
+	width: 40vw;
+	padding: 1em;
+	border-radius: 0em 1em 1em 0em;
+	font-size: 2em;
+	color: white;
+	text-align: right;
+}
+.oboksiebie{
+	display: flex;
+	justify-content: center;
+	gap: 4em;
+	margin-bottom: 4em;
+}
+.oboksiebie img{
+	width: 100%;
+}
+.oboksiebie h3{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 1em;
+	margin-top: 2em;
+	border-radius: 1em;
+}
+#piata{
+	background: url("../img/iluzja 7.jpg")center fixed;
+	background-size: cover;
+}
+#piata h3{
+	font-size: 20em;
+	mix-blend-mode: exclusion;
+	color: yellow;
+	text-align: center;
+	font-weight: 900;
+}
+#szosta{
+	min-height: 40vh;
+	background-color: black;
+}
+#szosta h4{
+	color: white;
+	text-align: center;
+	margin-bottom: 20px;
+}
+#szosta input[type=email]{
+	background-color: white;
+	border-radius: 2em 2em 2em 2em;
+	width: 300px;
+	padding: 8px 15px;
+}
+#szosta input[type=button]{
+	border-radius: 2em 2em 2em 2em;
+	padding: 8px 20px;
+	margin-left: 10px; 
+}
+#siodma{
+	background-image: url("../img/tlo3.jpg");
+	background-repeat: repeat;
+	background-position: center;
+}
+.tekst{
+	padding: 3em;
+	background-color: rgba(255,255,255,0.5);
+	backdrop-filter: blur(5px);
+	line-height: 1.5em;
+	border-radius: 2em;
+	
+}
+.przycisk{
+	display: flex;
+}
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+}
+footer div img {
+	padding: 20px;
+}
+footer h6{
+	text-align: center;
+}
+@media all and (max-width:850px){
+	#pierwsza{
+		background-image: url("../img/tlo pierwsze pion.jpg");
+	}
+	#druga article{
+		flex-direction: column-reverse;
+	}
+	#druga article img{
+		align-items: center;
+		margin: auto;
+	}
+	.oboksiebie{
+		flex-direction: column;
+	}
+	#piata{
+		background-image: url("../img/iluzja7pion.jpg");
+		background-size: cover;
+	}
+	#piata h3{
+		font-size: 10em;
+	}
+	nav{
+		display: none;
+	}
+	.burger{
+		display: block;
+	}
+	.nakladka {
+		display: block;
+	}
+	
+	.closebutton {
+		display: block;
+	}
+	
+}
